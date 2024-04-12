@@ -1,0 +1,1425 @@
+html,
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  line-height: 1.4em;
+  color: #db6363;
+}
+
+body {
+  background-color: white;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Title and Description */
+
+.page-title {
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+}
+
+.logo {
+  /*height: 80px;
+  width: 80px;
+  background-image: url("logo.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;*/
+  display: inline-block;
+  position: relative;
+  top: 1em;
+}
+
+.page-title h1 {
+  display: inline-block;
+  margin: 10px;
+}
+
+.main {
+  text-align: center;
+}
+
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
+}
+
+.learn-more {
+  color: #6375db;
+  text-decoration: none;
+  display: block;
+  margin: 25px 0 0 0;
+  font-weight: bold;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.gallery-item .foto {
+  width: 240px;
+  height: 240px;
+}
+
+.text {
+  position: absolute;
+  font-family: ClashGrotesk-Variable, sans-serif;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background with transparency */
+  color: white; /* Text color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item:hover .text {
+  opacity: 1; /* Show text on hover */
+}
+
+/* Diseño */
+
+nav {
+  margin-top: 30px;
+  text-align: center;
+}
+
+nav ul {
+  display: block;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #db6363;
+}
+
+.custom .elementos {
+  color: black;
+  font-size: 0.65rem;
+  font-family: ClashGrotesk-Variable, sans-serif;
+  margin: 25px;
+  text-align: center;
+}
+
+/* Formulario */
+
+#formulario {
+  text-align: center;
+}
+
+/* Footer Navigation */
+
+div a {
+  line-height: 60px;
+  border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: #db6363;
+  text-decoration: none;
+}
+
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+  .page-title {
+    width: 270px;
+  }
+  /*.gallery-item .foto {
+    width: 95%;
+  }*/
+  #formulario {
+    font-size: 0.75em;
+  }
+} 
+
+@media only screen and (max-resolution: 125dpi) and (max-width: 480px) {
+  .page-description {
+  font-size: 20px; 
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title, .page-description {
+    float: left;
+    width: 20em;
+  }
+  .page-description {
+    text-align: left;
+  }
+}
+
+/*@media only screen and (min-resolution: 100dpi) {
+  .logo {
+    background-image: url('logo.jpeg');
+  }
+}*/
+
+/* Colores */
+
+.crimson {
+  background-color: crimson;
+  color: crimson;
+  place-content: center;
+  display: inline-block;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.crimson:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.darkred {
+  background-color: darkred;
+  color: darkred;
+  place-content: center;
+  display: inline-block;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkred:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.darksalmon {
+  background-color: darksalmon;
+  color: darksalmon;
+  place-content: center;
+  display: inline-block;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darksalmon:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.firebrick {
+  background-color: firebrick;
+  color: firebrick;
+  place-content: center;
+  display: inline-block;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.firebrick:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.indianred {
+  background-color: indianred;
+  display: inline-block;
+  color: indianred;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.indianred:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lightcoral {
+  background-color: lightcoral;
+  display: inline-block;
+  color: lightcoral;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lightcoral:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lightsalmon {
+  background-color: lightsalmon;
+  display: inline-block;
+  color: lightsalmon;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lightsalmon:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.red {
+  background-color: red;
+  display: inline-block;
+  color: red;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.red:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.salmon {
+  background-color: salmon;
+  display: inline-block;
+  color: salmon;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.salmon:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.maroon {
+  background-color: maroon;
+  display: inline-block;
+  color: maroon;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.maroon:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.coral {
+  background-color: coral;
+  display: inline-block;
+  color: coral;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.coral:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.darkorange {
+  background-color: darkorange;
+  display: inline-block;
+  color: darkorange;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkorange:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.gold {
+  background-color: gold;
+  display: inline-block;
+  color: gold;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.gold:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.orange {
+  background-color: orange;
+  display: inline-block;
+  color: orange;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.orange:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.orangered {
+  background-color: orangered;
+  display: inline-block;
+  color: orangered;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.orangered:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.tomato {
+  background-color: tomato;
+  display: inline-block;
+  color: tomato;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.tomato:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.darkkhaki {
+  background-color: darkkhaki;
+  display: inline-block;
+  color: darkkhaki;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkkhaki:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.khaki {
+  background-color: khaki;
+  display: inline-block;
+  color: khaki;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.khaki:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lemonchiffon {
+  background-color: lemonchiffon;
+  display: inline-block;
+  color: lemonchiffon;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lemonchiffon:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lightgoldenrod {
+  background-color: lightgoldenrodyellow;
+  display: inline-block;
+  color: lightgoldenrodyellow;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lightgoldenrod:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lightyellow {
+  background-color: lightyellow;
+  display: inline-block;
+  color: lightyellow;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lightyellow:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.moccasin {
+  background-color: moccasin;
+  display: inline-block;
+  color: moccasin;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.moccasin:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.palegoldenrod {
+  background-color: palegoldenrod;
+  display: inline-block;
+  color: palegoldenrod;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.palegoldenrod:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.papayawhip {
+  background-color: papayawhip;
+  display: inline-block;
+  color: papayawhip;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.papayawhip:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.peachpuff {
+  background-color: peachpuff;
+  display: inline-block;
+  color: peachpuff;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.peachpuff:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.yellow {
+  background-color: yellow;
+  display: inline-block;
+  color: yellow;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.yellow:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.darkgreen {
+  background-color: darkgreen;
+  display: inline-block;
+  color: darkgreen;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkgreen:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.seagreen {
+  background-color: seagreen;
+  display: inline-block;
+  color: seagreen;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.seagreen:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.forestgreen {
+  background-color: forestgreen;
+  display: inline-block;
+  color: forestgreen;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.forestgreen:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.green {
+  background-color: green;
+  display: inline-block;
+  color: green;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.green:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.greenyellow {
+  background-color: greenyellow;
+  display: inline-block;
+  color: greenyellow;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.greenyellow:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lawngreen {
+  background-color: lawngreen;
+  display: inline-block;
+  color: lawngreen;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lawngreen:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+  display: inline-block;
+  color: lightgreen;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lightgreen:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.limegreen {
+  background-color: limegreen;
+  display: inline-block;
+  color: limegreen;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.limegreen:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.palegreen {
+  background-color: palegreen;
+  display: inline-block;
+  color: palegreen;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.palegreen:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.springgreen {
+  background-color: springgreen;
+  display: inline-block;
+  color: springgreen;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.springgreen:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.aquamarine {
+  background-color: aquamarine;
+  display: inline-block;
+  color: aquamarine;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.aquamarine:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.turquoise {
+  background-color: turquoise;
+  display: inline-block;
+  color: turquoise;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.turquoise:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.cyan {
+  background-color: cyan;
+  display: inline-block;
+  color: cyan;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.cyan:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.cadetblue {
+  background-color: cadetblue;
+  display: inline-block;
+  color: cadetblue;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.cadetblue:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.teal {
+  background-color: teal;
+  display: inline-block;
+  color: teal;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.teal:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.deepskyblue {
+  background-color: deepskyblue;
+  display: inline-block;
+  color: deepskyblue;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.deepskyblue:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.dodgerblue {
+  background-color: dodgerblue;
+  display: inline-block;
+  color: dodgerblue;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.dodgerblue:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.navy {
+  background-color: navy;
+  display: inline-block;
+  color: navy;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.navy:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.royalblue {
+  background-color: royalblue;
+  display: inline-block;
+  color: royalblue;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.royalblue:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.skyblue {
+  background-color: skyblue;
+  display: inline-block;
+  color: skyblue;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.skyblue:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.deeppink {
+  background-color: deeppink;
+  display: inline-block;
+  color: deeppink;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.deeppink:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.hotpink {
+  background-color: hotpink;
+  display: inline-block;
+  color: hotpink;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.hotpink:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lightpink {
+  background-color: lightpink;
+  display: inline-block;
+  color: lightpink;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lightpink:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.mediumviolet {
+  background-color: mediumvioletred;
+  display: inline-block;
+  color: mediumvioletred;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.mediumviolet:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.paleviolet {
+  background-color: palevioletred;
+  display: inline-block;
+  color: palevioletred;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.paleviolet:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.pink {
+  background-color: pink;
+  display: inline-block;
+  color: pink;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.pink:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.darkmagenta {
+  background-color: darkmagenta;
+  display: inline-block;
+  color: darkmagenta;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkmagenta:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.darkorchid {
+  background-color: darkorchid;
+  display: inline-block;
+  color: darkorchid;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkorchid:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.darkviolet {
+  background-color: darkviolet;
+  display: inline-block;
+  color: darkviolet;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkviolet:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.fuchsia {
+  background-color: fuchsia;
+  display: inline-block;
+  color: fuchsia;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.fuchsia:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.mediumorchid {
+  background-color: mediumorchid;
+  display: inline-block;
+  color: mediumorchid;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.mediumorchid:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.orchid {
+  background-color: orchid;
+  display: inline-block;
+  color: orchid;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.orchid:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.plum {
+  background-color: plum;
+  display: inline-block;
+  color: plum;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.plum:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.purple {
+  background-color: purple;
+  display: inline-block;
+  color: purple;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.purple:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.rebeccapurple {
+  background-color: rebeccapurple;
+  display: inline-block;
+  color: rebeccapurple;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.rebeccapurple:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.violet {
+  background-color: violet;
+  display: inline-block;
+  color: violet;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.violet:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.bisque {
+  background-color: bisque;
+  display: inline-block;
+  color: bisque;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.bisque:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.brown {
+  background-color: brown;
+  display: inline-block;
+  color: brown;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.brown:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.burlywood {
+  background-color: burlywood;
+  display: inline-block;
+  color: burlywood;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.burlywood:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.chocolate {
+  background-color: chocolate;
+  display: inline-block;
+  color: chocolate;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.chocolate:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.darkgoldenrod {
+  background-color: darkgoldenrod;
+  display: inline-block;
+  color: darkgoldenrod;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkgoldenrod:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.peru {
+  background-color: peru;
+  display: inline-block;
+  color: peru;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.peru:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.saddlebrown {
+  background-color: saddlebrown;
+  display: inline-block;
+  color: saddlebrown;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.saddlebrown:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.sandybrown {
+  background-color: sandybrown;
+  display: inline-block;
+  color: sandybrown;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.sandybrown:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.sienna {
+  background-color: sienna;
+  display: inline-block;
+  color: sienna;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.sienna:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.tan {
+  background-color: tan;
+  display: inline-block;
+  color: tan;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.tan:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.azure {
+  background-color: azure;
+  display: inline-block;
+  color: azure;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.azure:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.black {
+  background-color: black;
+  display: inline-block;
+  color: black;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.black:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.darkgray {
+  background-color: darkgray;
+  display: inline-block;
+  color: darkgray;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.darkgray:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.dimgray {
+  background-color: dimgray;
+  display: inline-block;
+  color: dimgray;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.dimgray:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.gainsboro {
+  background-color: gainsboro;
+  display: inline-block;
+  color: gainsboro;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.gainsboro:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.honeydew {
+  background-color: honeydew;
+  display: inline-block;
+  color: honeydew;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.honeydew:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.lavenderblush {
+  background-color: lavenderblush;
+  display: inline-block;
+  color: lavenderblush;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.lavenderblush:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.slategray {
+  background-color: slategray;
+  display: inline-block;
+  color: slategray;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.slategray:hover {
+  color: white;
+  transition: .2s all ease-in-out;
+}
+
+.silver {
+  background-color: silver;
+  display: inline-block;
+  color: silver;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.silver:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+
+.ghostwhite {
+  background-color: ghostwhite;
+  display: inline-block;
+  color: ghostwhite;
+  place-content: center;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+}
+
+.ghostwhite:hover {
+  color: black;
+  transition: .2s all ease-in-out;
+}
+

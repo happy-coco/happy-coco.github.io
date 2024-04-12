@@ -1,0 +1,136 @@
+body {
+  background-color: #db6363;
+  color: #fcfcfc;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+  gap: 20px;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+}
+
+.title {
+  margin: auto;
+  color: #fcfcfc;
+  /*font-family: Poppins;*/
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.banner {
+  padding: 3%;
+  background-color: #ffffff;
+  color: #db6363;
+  /*font-family: Poppins;*/
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: 3.7px;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+p, .banner-contents {
+  max-width: 80%;
+  margin: auto;
+}
+
+img {
+  height: 5em;
+  justify-content: center;
+}
+
+.about {
+  background-color: #f0f0f0;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+}
+
+.text {
+  color: #2f2d2d;
+  /*font-family: Poppins;*/
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/*.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}*/
+
+.box {
+  background-color: #2f2f2f;
+  color: #ffffff;
+  /*font-family: Poppins;*/
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  display: grid;
+  padding: 5% 2.5%;
+}
+
+@media only screen and (max-width: 700px) {
+  .box {
+    font-size: 7.5px;
+  }
+}
+
+.address {
+  grid-column: 1 / span 2;
+}
+
+.hours {
+  grid-column: 3 / span 2;
+}
+
+.call-us {
+  grid-column: 5 / span 2;
+}
+
+.icon {
+  height: 80px;
+  margin: auto;
+}
+
+.testimonial {
+  background-color: #f0f0f0;
+  color: #db6363;
+  /*font-family: Poppins;*/
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 3.7px;
+  display: grid;
+  padding: 7.5px;
+}
+
+.one {
+  grid-column: 1 / span 3;
+}
+
+.two {
+  grid-column: 4 / span 3;
+}
+
+footer {
+  background-color: #db6363;
+  color: #ffffff;
+  /*font-family: Poppins;*/
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+}
+
